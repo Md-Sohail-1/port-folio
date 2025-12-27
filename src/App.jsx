@@ -9,7 +9,7 @@ import ContactSection from './Components/ContactSection'
 
 const App = () => {
   return (
-    <div className=" font-poppins" >
+    <div className=" font-poppins pt-16" >
       <Header />
       <LandingSection />
       <About />

@@ -9,16 +9,16 @@ const Header = () => {
   
   
   return (
-    <header className=" font-poppins h-16 fixed top-0 z-50 w-full bg-primary text-offwhite dark:text-offwhite/90 dark:bg-offblack/90 dark:border-b dark:border-offwhite/60 flex items-center justify-between md:px-15" >
+    <header className="h-16 top-0 fixed z-50 w-full bg-primary text-offwhite dark:text-dark-secondary dark:bg-light-primary dark:border-b dark:border-offblack/60 flex items-center justify-between md:px-15 px-5" >
       <h2 className="text-shadow-xs relative z-50 text-xl font-bold uppercase" >Sohail</h2>
-      <ul className="relative z-50 gap-4 hidden md:flex">
-        <a><li>Home</li></a>
-        <a><li>About</li></a>
-        <a><li>Skills</li></a>
-        <a><li>Projects</li></a>
-        <a><li>Contact</li></a>
+      <ul className="relative z-50 gap-4 hidden md:flex ">
+        <a href="#" ><li className="text-shadow-xs px-2 py-2 rounded-md hover:text-offwhite/80 dark:hover:hover:text-dark-primary transition-all duration-200 ease-in leading-4 hover:underline-offset-6 hover:underline decoration-offwhite dark:decoration-dark-primary" >Home</li></a>
+        <a href="#" ><li className="text-shadow-xs px-2 py-2 rounded-md hover:text-offwhite/80 dark:hover:hover:text-dark-primary transition-all duration-200 ease-in leading-4 hover:underline-offset-6 hover:underline decoration-offwhite dark:decoration-dark-primary" >About</li></a>
+        <a href="#" ><li className="text-shadow-xs px-2 py-2 rounded-md hover:text-offwhite/80 dark:hover:hover:text-dark-primary transition-all duration-200 ease-in leading-4 hover:underline-offset-6 hover:underline decoration-offwhite dark:decoration-dark-primary" >Skills</li></a>
+        <a href="#" ><li className="text-shadow-xs px-2 py-2 rounded-md hover:text-offwhite/80 dark:hover:hover:text-dark-primary transition-all duration-200 ease-in leading-4 hover:underline-offset-6 hover:underline decoration-offwhite dark:decoration-dark-primary" >Projects</li></a>
+        <a href="#" ><li className="text-shadow-xs px-2 py-2 rounded-md hover:text-offwhite/80 dark:hover:hover:text-dark-primary transition-all duration-200 ease-in leading-4 hover:underline-offset-6 hover:underline decoration-offwhite dark:decoration-dark-primary" >Contact</li></a>
       </ul>
-      <span className="text-xl" >{showNavigation ? <FaToggleOff /> : <FaToggleOn />}</span>
+      <span className="text-xl md:text-3xl hidden md:flex" >{showNavigation ? <FaToggleOff /> : <FaToggleOn />}</span>
       <div className="md:hidden flex gap-4 items-center text-xl" >
         <span>{showNavigation ? <FaToggleOff /> : <FaToggleOn />}</span>
         <button className="md:hidden" onClick={()=> setShowNavigation(!showNavigation)}>{showNavigation ? <RxCross2 /> : <HiMenu />}</button>

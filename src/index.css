@@ -2,18 +2,56 @@
 @import "tailwindcss";
 
 em{
-  color: #111222;
+  color: hsl(219, 68%, 55%);
+  color: hsl(218, 54%, 18%);
+  color: hsl(216, 12%, 84%);
+  color: hsl(210, 10%, 73%);
+  color: hsl(219, 68%, 55%);
+  color: hsl(211, 80%, 33%);
+  color: hsl(220, 100%, 92%);
+  color: hsl(218, 100%, 86%);
+  color: hsl(217, 31%, 71%);
 }
 
 @theme {
-  --color-offwhite: #fafafa;
-  --color-offblack: #222222;
-  --color-primary: #E900C1;
-  --color-secondary: #00E028;
-  --color-dark-primary: #b00092;
-  --color-dark-secondary: #00B01E;
-  
+  --color-offwhite: hsl(216, 12%, 95%);
+  --color-offblack: hsl(218, 54%, 18%);
+  --color-primary: hsl(219, 68%, 55%);
+  --color-secondary: hsl(210, 25%, 60%);
+  --color-dark-primary: hsl(219, 80%, 39%);
+  --color-dark-secondary: hsl(210, 29%, 34%);
+  --color-light-primary: hsl(220, 100%, 94%);
+  --color-light-secondary: hsl(219, 30%, 70%);
   --font-poppins: "Poppins", sans-serif;
+}
+
+@layer base {
+  h1{
+    font-size: clamp(1.9rem, 3vw, 5rem);
+  }
+  h3{
+    font-size: clamp(1rem, 1.5vw, 2.5rem);
+    font-weight: 500;
+  }
+  h2{
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
+    text-align: center;
+    font-weight: 600;
+  }
+ 
+}
+
+@layer components {
+  .landing-image{
+    width: clamp(100px, 80% , 25rem);
+    margin: 0 auto;
+  }
+  .landing-para{
+    font-size: clamp(0.8rem, 1rem, 2rem);
+  }
+  .product-para{
+    font-size: clamp(0.8rem, 0.9rem, 1.5rem);
+  }
 }
 
 @custom-variant dark (&:where(.dark, .dark *));

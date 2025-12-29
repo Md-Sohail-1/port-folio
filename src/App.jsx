@@ -6,6 +6,8 @@ import About from './Components/About'
 import ProjectsSection from './Components/ProjectsSection'
 import SkillSection from './Components/SkillSection'
 import ContactSection from './Components/ContactSection'
+import Footer from './Components/Footer'
+
 
 const App = () => {
   const appRef = useRef(null)
@@ -16,13 +18,14 @@ const App = () => {
   
   
   return (
-    <div ref={appRef} className=" font-poppins pt-16" >
+    <div ref={appRef} className="font-poppins pt-16" >
       <Header toggleThemeFunc={toggleTheme}/>
       <LandingSection />
       <About />
       <ProjectsSection />
       <SkillSection />
       <ContactSection />
+      <Footer/>
     {/*
       <div className="dark:bg-black py-10 px-10 dark">
     <div className="h-10 w-full bg-primary/50 ">App</div>

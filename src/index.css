@@ -1,26 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Libertinus+Keyboard&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "tailwindcss";
 
-em{
-  color: hsl(219, 68%, 55%);
-  color: hsl(218, 54%, 18%);
-  color: hsl(216, 12%, 84%);
-  color: hsl(210, 10%, 73%);
-  color: hsl(219, 68%, 55%);
-  color: hsl(211, 80%, 33%);
-  color: hsl(220, 100%, 92%);
-  color: hsl(218, 100%, 86%);
-  color: hsl(217, 31%, 71%);
+*{
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 @theme {
-  --color-offwhite: hsl(216, 12%, 95%);
-  --color-offblack: hsl(218, 54%, 18%);
+  --color-white: hsl(216, 100%, 100%);
+  --color-offblack: hsl(220, 30%, 20%);
   --color-primary: hsl(219, 68%, 55%);
-  --color-secondary: hsl(210, 25%, 60%);
+  --color-secondary: hsl(220, 50%, 95%);
   --color-dark-primary: hsl(219, 80%, 39%);
   --color-dark-secondary: hsl(210, 29%, 34%);
-  --color-light-primary: hsl(220, 100%, 94%);
+  --color-light-primary: hsl(219, 20%, 61%);
   --color-light-secondary: hsl(219, 30%, 70%);
   --font-poppins: "Poppins", sans-serif;
 }

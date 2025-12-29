@@ -4,10 +4,12 @@ import { FaToggleOn } from "react-icons/fa6";
 import { HiMenu } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
 
-const Header = () => {
+const Header = ({toggleThemeFunc}) => {
   const [showNavigation, setShowNavigation] = useState(false)
+  const [theme, setTheme] = useState()
   
   
+  //alert(JSON.stringify(appRef))
   return (
     <header className="h-16 top-0 fixed z-50 w-full bg-primary text-offwhite dark:text-dark-secondary dark:bg-light-primary dark:border-b dark:border-offblack/60 flex items-center justify-between md:px-15 px-5" >
       <h2 className="text-shadow-xs relative z-50 text-xl font-bold uppercase" >Sohail</h2>
@@ -18,9 +20,9 @@ const Header = () => {
         <a href="#" ><li className="text-shadow-xs px-2 py-2 rounded-md hover:text-offwhite/80 dark:hover:hover:text-dark-primary transition-all duration-200 ease-in leading-4 hover:underline-offset-6 hover:underline decoration-offwhite dark:decoration-dark-primary" >Projects</li></a>
         <a href="#" ><li className="text-shadow-xs px-2 py-2 rounded-md hover:text-offwhite/80 dark:hover:hover:text-dark-primary transition-all duration-200 ease-in leading-4 hover:underline-offset-6 hover:underline decoration-offwhite dark:decoration-dark-primary" >Contact</li></a>
       </ul>
-      <span className="text-xl md:text-3xl hidden md:flex" >{showNavigation ? <FaToggleOff /> : <FaToggleOn />}</span>
+      <span className="hidden md:flex" onClick={()=>toggleThemeFunc} >{showNavigation ? <FaToggleOff /> : <FaToggleOn />}</span>
       <div className="md:hidden flex gap-4 items-center text-xl" >
-        <span>{showNavigation ? <FaToggleOff /> : <FaToggleOn />}</span>
+        <span onClick={()=>toggleThemeFunc()} >{showNavigation ? <FaToggleOff /> : <FaToggleOn />}</span>
         <button className="md:hidden" onClick={()=> setShowNavigation(!showNavigation)}>{showNavigation ? <RxCross2 /> : <HiMenu />}</button>
       </div>
       <ul className={`${showNavigation ? 'translate-x-0' : ''} transition -translate-x-[100%] absolute z-10 gap-4 md:hidden h-[calc(100vh - 64px)] w-full top-16 left-0 bg-linear-to-br from-white to-white dark:from-black/80 dark:to-black/90 text-black dark:text-white/70 pt-4 px-4 flex flex-col gap-4 py-8`}>

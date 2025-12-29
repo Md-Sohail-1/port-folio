@@ -1,4 +1,4 @@
-import React from 'react'
+import { useRef } from 'react'
 
 import Header from './Components/Header'
 import LandingSection from './Components/LandingSection'
@@ -8,9 +8,16 @@ import SkillSection from './Components/SkillSection'
 import ContactSection from './Components/ContactSection'
 
 const App = () => {
+  const appRef = useRef(null)
+  
+  function toggleTheme () {
+    appRef.current.classList.toggle("dark")
+  }
+  
+  
   return (
-    <div className=" font-poppins pt-16" >
-      <Header />
+    <div ref={appRef} className=" font-poppins pt-16" >
+      <Header toggleThemeFunc={toggleTheme}/>
       <LandingSection />
       <About />
       <ProjectsSection />

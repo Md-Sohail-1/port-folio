@@ -31,10 +31,10 @@ const ProjectsSection = () => {
   ]
 
   return (
-    <div id='projects' className="h-auto w-full md:px-15 px-5 py-20  bg-white text-offblack/70 dark:bg-offblack dark:text-secondary" >
+    <div id='projects' className="h-auto w-full md:px-15 px-5 py-20  bg-white text-offblack/70 dark:bg-offblack dark:text-secondary/70" >
       
       <div className='max-w-7xl mx-auto'>
-      <h2 className=" text-shadow-xs text-offblack" >Projects</h2>
+      <h2 className=" text-shadow-xs text-offblack dark:text-white" >Projects</h2>
       <p className="text-center text-md pb-8" >A few of the things I've built</p>
       <div className="grid grid-rows-1 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5  auto-rows-auto" >
         {projects.map((project)=>(

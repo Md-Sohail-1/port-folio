@@ -2,8 +2,8 @@ import React from 'react'
 
 const LandingSection = () => {
   return (
-    <div className="relative pt-16 bg-white text-offblack dark:text-secondary dark:bg-offblack w-full md:px-15  md:py-0 px-5 gap-12 md:gap-20" >
-      <div className='md:h-screen  max-w-7xl mx-auto min-h-[calc(100vh-64px)] flex flex-col md:flex-row md:items-center md:justify-between  '>
+    <div className="relative pt-16 bg-white text-offblack dark:text-secondary dark:bg-offblack w-full md:px-15  md:py-0 px-5 " >
+      <div className='md:h-screen  max-w-7xl mx-auto min-h-[calc(100vh-64px)] flex gap-12 md:gap-20 flex-col md:flex-row md:items-center md:justify-between pb-10 md:pb-0 '>
       <div className="flex flex-col gap-4 self start md:w-1/2" >
         <h1 className="font-bold traking-widest text-shadow-xs" >I'm <span className='text-primary  italic'>Design</span> focused <span className='text-primary italic'>Frontend Developer</span> | <span className='text-primary italic'>UI Engineer</span></h1 >
         <p className="landing-para pr-12 md:pr-4 text-shadow-xs" >

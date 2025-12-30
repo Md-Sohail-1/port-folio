@@ -7,12 +7,14 @@ const SkillSection = () => {
     'Tailwind CSS',
     'JavaScript',
     'Web Design',
-    'Git/Github',
-    'Responsive UI Design',
-    'Problem Solving',
     'UI/UX Design',
+    'Responsive UI Design',
     'HTML & CSS',
+    'Mobile first UX',
     'Figma(Design to Code)',
+    'REST APIs',
+    'Git/Github',
+    'Problem Solving',
     'Accessibility',
     ]
   

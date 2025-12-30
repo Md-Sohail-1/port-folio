@@ -9,6 +9,10 @@
     display: none;
 }
 
+.theme-toggler{
+  cursor: pointer;
+}
+
 @theme {
   --color-white: hsl(216, 100%, 100%);
   --color-offblack: hsl(220, 30%, 20%);

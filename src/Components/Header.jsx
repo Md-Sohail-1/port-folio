@@ -4,12 +4,24 @@ import { FaToggleOn } from "react-icons/fa6";
 import { HiMenu } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
 
-const Header = ({toggleThemeFunc}) => {
+const Header = ({toggleFunc}) => {
   const [showNavigation, setShowNavigation] = useState(false)
-  const [theme, setTheme] = useState()
-  
-  
-  //alert(JSON.stringify(appRef))
+  const [theme, setTheme] = useState(window.localStorage.getItem('theme'))
+
+  function toggleTheme () {
+    let currentTheme = window.localStorage.getItem('theme')
+    if(currentTheme == 'light'){
+      window.localStorage.setItem('theme', 'dark')
+      setTheme('dark')
+      toggleFunc('light')
+    } else {
+      window.localStorage.setItem('theme', 'light')
+      setTheme('light')
+      toggleFunc('dark')
+    }
+  }  
+
+
   return (
     <header className="h-16 top-0  mx-auto fixed z-50 w-full bg-primary text-secondary/90 dark:text-secondary/90 dark:bg-dark-primary dark:border-b dark:border-offblack/60 md:px-15 px-5" >
       <div className='h-16 max-w-7xl mx-auto flex items-center justify-between '>
@@ -20,9 +32,9 @@ const Header = ({toggleThemeFunc}) => {
         <a href="#projects" ><li className="text-shadow-xs px-2 py-2 rounded-md hover:text-white dark:hover:hover:text-white transition-all duration-100 ease-in leading-4 hover:underline-offset-6 hover:underline decoration-white dark:decoration-white" >Projects</li></a>
         <a href="#contact" ><li className="text-shadow-xs px-2 py-2 rounded-md hover:text-white dark:hover:hover:text-white transition-all duration-100 ease-in leading-4 hover:underline-offset-6 hover:underline decoration-white dark:decoration-white" >Contact</li></a>
       </ul>
-      <span className="hidden md:flex text-2xl" onClick={()=>toggleThemeFunc()} >{showNavigation ? <FaToggleOff /> : <FaToggleOn />}</span>
+      <span  className="theme-toggler hidden md:flex text-2xl" onClick={()=>toggleTheme()} >{theme == 'light' ? <FaToggleOff /> : <FaToggleOn />}</span>
       <div className="md:hidden flex gap-4 items-center text-xl" >
-        <span className='' onClick={()=>toggleThemeFunc()} >{showNavigation ? <FaToggleOff /> : <FaToggleOn />}</span>
+        <span  className='theme-toggler' onClick={()=>toggleTheme()} >{theme == 'light' ? <FaToggleOff /> : <FaToggleOn />}</span>
         <button className="md:hidden" onClick={()=> setShowNavigation(!showNavigation)}>{showNavigation ? <RxCross2 /> : <HiMenu />}</button>
       </div>
       <ul className={`${showNavigation ? 'translate-x-0' : ''} transition -translate-x-full absolute z-10 gap-4 md:hidden h-[calc(100vh - 64px)] w-full top-16 left-0 bg-white dark:bg-offblack text-black/80 dark:text-white/80 pt-4 px-4 flex flex-col py-8`}>

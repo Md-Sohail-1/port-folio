@@ -1,4 +1,4 @@
-import { useRef, useEffect } from 'react'
+import { useRef, useEffect,useState } from 'react'
 
 import Header from './Components/Header'
 import LandingSection from './Components/LandingSection'
@@ -11,10 +11,11 @@ import Footer from './Components/Footer'
 
 const App = () => {
   const appRef = useRef(null)
-  
+  const [theme, setTheme] = useState(window.localStorage.getItem('theme'))
+
   function toggleTheme (theme) {
     if(theme == 'light'){
-      appRef.current.classList.toggle("dark")
+      appRef.current.classList.add("dark")
       return
     }
     appRef.current.classList.remove("dark")
@@ -25,6 +26,7 @@ const App = () => {
       window.localStorage.setItem('theme', 'light')
       return
     }
+    setTheme(window.localStorage.getItem('theme'))
   }
 
   useEffect(()=>{
@@ -32,7 +34,7 @@ const App = () => {
   },[])
 
   return (
-    <div ref={appRef} className={`font-poppins pt-16`} >
+    <div ref={appRef} className={`${theme == 'dark' && 'dark'} font-poppins pt-16`} >
       <Header toggleFunc={toggleTheme}/>
       <LandingSection />
       <About />

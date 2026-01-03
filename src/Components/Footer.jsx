@@ -10,8 +10,8 @@ const Footer = () => {
             <div className='flex items-center gap-2'>
                 <h4>Made with</h4> 
                 <FaHeart className='text-red-600'/>
-                <h4>By</h4>
-                <span>MD Sohail</span>
+                <h4>By <span>MD Sohail</span></h4>
+                
             </div>
             <div className='flex gap-4 text-xl md:text-2xl '>
                 <a href='https://github.com/Md-Sohail-1' target="_blank" className='group text-secondary/70'>

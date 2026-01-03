@@ -23,7 +23,7 @@ const SkillSection = () => {
       
       <div className='max-w-7xl mx-auto'>
       <h2 className="text-shadow-xs text-offblack dark:text-white/90" >My Skills</h2>
-      <p className="text-center text-md pb-5" >A few of the things I've Know</p>
+      <p className="text-center text-md pb-5 product-para" >A few of the things I've Know</p>
       <div className="flex flex-wrap gap-x-2 gap-y-2 " >
       {
         skills.map((skill,index)=>(

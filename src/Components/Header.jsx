@@ -37,7 +37,7 @@ const Header = ({toggleFunc}) => {
         <span  className='theme-toggler' onClick={()=>toggleTheme()} >{theme == 'light' ? <FaToggleOff /> : <FaToggleOn />}</span>
         <button className="md:hidden" onClick={()=> setShowNavigation(!showNavigation)}>{showNavigation ? <RxCross2 /> : <HiMenu />}</button>
       </div>
-      <ul className={`${showNavigation ? 'translate-x-0' : ''} transition -translate-x-full absolute z-10 gap-4 md:hidden h-[calc(100vh - 64px)] w-full top-16 left-0 bg-white dark:bg-offblack text-black/80 dark:text-white/80 pt-4 px-4 flex flex-col py-8`}>
+      <ul className={`${showNavigation ? 'translate-x-0' : ''} transition -translate-x-full absolute z-10 gap-4 md:hidden h-[calc(100vh - 64px)] w-full top-16 left-0 bg-white dark:bg-offblack text-black/80 dark:text-white/80 pt-4 px-4 flex flex-col py-8 border-b border-slate-300/50`}>
         <a href="#about" ><li className="text-shadow-xs px-2 py-2 rounded-md hover:text-primary/70 leading-4 underline-offset-6 hover:underline decoration-primary" >About</li></a>
         <a href="#skills" ><li className="text-shadow-xs px-2 py-2 rounded-md hover:text-primary/70 leading-4 underline-offset-6 hover:underline decoration-primary" >Skills</li></a>
         <a href="#projects" ><li className="text-shadow-xs px-2 py-2 rounded-md hover:text-primary/70 leading-4 underline-offset-6 hover:underline decoration-primary" >Projects</li></a>

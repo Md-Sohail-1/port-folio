@@ -1,15 +1,22 @@
-import React from 'react'
+import { ReactTyped } from 'react-typed'
 
 const LandingSection = () => {
+  const typedStrings = ["Frontend Engineer UI", "UI Engineer", "Product Frontend Engineer"]
+
   return (
-    <div className="relative pt-16 bg-white text-offblack dark:text-secondary dark:bg-offblack w-full md:px-15  md:py-0 px-5 " >
-      <div className='md:h-screen  max-w-7xl mx-auto min-h-[calc(100vh-64px)] flex gap-12 md:gap-20 flex-col md:flex-row md:items-center md:justify-between pb-10 md:pb-0 '>
+    <div className="relative pt-16 bg-white  text-offblack dark:text-secondary dark:bg-offblack w-full min-h-[calc(100vh-64px)] md:px-15  md:py-0 px-5 " >
+      <div className='md:h-screen  max-w-7xl mx-auto  flex gap-12 md:gap-20 flex-col md:flex-row md:items-center md:justify-between pb-10 md:pb-0 '>
       <div className="flex flex-col gap-4 self start md:w-1/2" >
-        <h1 className="font-bold traking-widest text-shadow-xs" >I'm <span className='text-primary  italic'>Design</span> focused <span className='text-primary italic'>Frontend Developer</span> | <span className='text-primary italic'>UI Engineer</span></h1 >
-        <p className="landing-para pr-12 md:pr-4 text-shadow-xs" >
+        <h1 className="font-bold traking-widest leading-12 text-shadow-xs" >
+          I'm <ReactTyped className=" text-primary dark:text-blue-400 font-semibold" 
+           strings={typedStrings} 
+           typeSpeed={80} 
+           backSpeed={60} 
+           loop /></h1 >
+        <p className="landing-para pr-8 md:pr-4 text-shadow-xs leading-7" >
           UI Engineer specializing in building clean, accessible and responsive user interfaces using <b>React, Tailwind CSS, and JavaScript,</b> with strong focus on <b>UI consistency, UX principles, and design-to-code workflows.</b>
         </p>
-        <a href="../src/assets/sohailResume.pdf" role='button' download="sohailResume.pdf" className="mr-auto w-content text-sm text-white/90 bg-primary dark:text-white/80 shadow-sm text-shadow-md hover:bg-dark-primary dark:bg-dark-primary hover:dark:bg-dark-secondary px-4 md:px-8 py-3 md:py-3 rounded-md transition-all ease-in-out duration-200" >Download Resume</a>
+        <a href="../src/assets/sohailResume.pdf" role='button' download="sohailResume.pdf" className="mr-auto w-content text-sm text-white/90 bg-primary dark:text-white/80 shadow-sm text-shadow-md hover:bg-dark-primary dark:bg-dark-primary hover:dark:bg-primary px-4 md:px-8 py-3 md:py-3 rounded-md transition-all ease-in-out duration-200" >Download Resume</a>
       </div>
       <div className='landing-image bg-white rounded-full'>
         <img 

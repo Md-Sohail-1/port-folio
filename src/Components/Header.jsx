@@ -25,7 +25,7 @@ const Header = ({toggleFunc}) => {
   return (
     <header className="h-16 top-0  mx-auto fixed z-50 w-full bg-primary text-secondary/90 dark:text-secondary/90 dark:bg-dark-primary dark:border-b dark:border-offblack/60 md:px-15 px-5" >
       <div className='h-16 max-w-7xl mx-auto flex items-center justify-between '>
-      <h3 className="text-shadow-xs relative z-50 text-white font-bold uppercase" >Sohail</h3>
+      <h3 className="text-shadow-xs relative z-50 text-white font-bold uppercase" >MD Sohail</h3>
       <ul className="relative z-50 gap-4 hidden md:flex ">
         <a href="#about" ><li className="text-shadow-xs px-2 py-2 rounded-md hover:text-white dark:hover:hover:text-white transition-all duration-100 ease-in leading-4 hover:underline-offset-6 hover:underline decoration-white dark:decoration-white" >About</li></a>
         <a href="#skills" ><li className="text-shadow-xs px-2 py-2 rounded-md hover:text-white dark:hover:hover:text-white transition-all duration-100 ease-in leading-4 hover:underline-offset-6 hover:underline decoration-white dark:decoration-white" >Skills</li></a>

@@ -11,7 +11,7 @@ const Footer = () => {
                 <h4>Made with</h4> 
                 <FaHeart className='text-red-600'/>
                 <h4>By</h4>
-                <span>Sohail</span>
+                <span>MD Sohail</span>
             </div>
             <div className='flex gap-4 text-xl md:text-2xl '>
                 <a href='https://github.com/Md-Sohail-1' target="_blank" className='group text-secondary/70'>

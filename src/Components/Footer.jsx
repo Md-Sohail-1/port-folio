@@ -14,10 +14,10 @@ const Footer = () => {
                 
             </div>
             <div className='flex gap-4 text-xl md:text-2xl '>
-                <a href='https://github.com/Md-Sohail-1' target="_blank" className='group text-secondary/70'>
+                <a aria-label="goto github profile" href='https://github.com/Md-Sohail-1' target="_blank" className='group text-secondary/70'>
                     <FaGithub className='group-hover:text-white'/>
                 </a>
-                <a href="https://linkedin.com" target="_blank" className='group text-secondary/70'>
+                <a aria-label="goto linkedin profile" href="https://linkedin.com" target="_blank" className='group text-secondary/70'>
                     <FaLinkedin className='group-hover:text-white'/>
                 </a>
             </div>

@@ -20,13 +20,6 @@ const ProjectsSection = () => {
       image: RealEstateImg,
       liveLink: "https://realestate-peach-seven.vercel.app",
       githubLink: "https://github.com/Md-Sohail-1/realestate",
-    },{
-      id: 3,
-      title: "Twitter Clone",
-      description: "Built with Node.js, Express, EJS, and MongoDB. Features secure login with JWT, public & private posts, and full CRUD. Clean UI with vanilla CSS & JavaScript.",
-      image: eComImage,
-      liveLink: "https://github.com/Md-Sohail-1/realestate",
-      githubLink: "https://github.com/Md-Sohail-1/realestate",
     },
   ]
 

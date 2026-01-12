@@ -2,6 +2,7 @@ import React from 'react'
 import ProjectCard from './ProjectCard'
 import eComImage from "../assets/eCom.png"
 import RealEstateImg from "../assets/realEstate.png"
+import Healthcare from "../assets/healthcare.png"
 
 const ProjectsSection = () => {
   const projects = [
@@ -21,6 +22,14 @@ const ProjectsSection = () => {
       liveLink: "https://realestate-peach-seven.vercel.app",
       githubLink: "https://github.com/Md-Sohail-1/realestate",
     },
+    {
+      id: 3,
+      title: "Healthcare Single-Page Web UI",
+      description: "A clean and responsive healthcare website UI featuring service details, doctor profiles, and appointment booking button with a trust-focused design approach.",
+      image: Healthcare,
+      liveLink: "https://medical-healthcare-omega.vercel.app/",
+      githubLink: "https://github.com/Md-Sohail-1/Medical-Healthcare"
+    }
   ]
 
   return (

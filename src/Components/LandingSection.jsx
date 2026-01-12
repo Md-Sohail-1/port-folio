@@ -7,7 +7,7 @@ const LandingSection = () => {
     <main className="relative pt-16 bg-white  text-offblack dark:text-secondary dark:bg-offblack w-full min-h-[calc(100vh-64px)] md:px-15  md:py-0 px-5 " >
       <div className='md:h-screen  max-w-7xl mx-auto  flex gap-12 md:gap-20 flex-col md:flex-row md:items-center md:justify-between pb-10 md:pb-0 '>
       <div className="flex flex-col gap-2 self start md:w-1/2" >
-        <h1 className="font-bold traking-widest leading-10 md:leading-16" >
+        <h1 className="font-bold traking-widest  md:leading-16" >
           I'm <ReactTyped className=" text-primary dark:text-blue-400 font-semibold" 
            strings={typedStrings} 
            typeSpeed={80} 

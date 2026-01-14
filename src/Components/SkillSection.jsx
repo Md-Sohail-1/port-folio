@@ -28,11 +28,11 @@ const SkillSection = () => {
   ]
   
   return (
-    <div id="skills" className="py-20 w-full px-5 md:px-15 bg-secondary text-offblack/80 dark:bg-dark-secondary dark:text-secondary/60" >
+    <div id="skills" className="py-20 w-full px-5 md:px-15 bg-secondary text-offblack/80 dark:bg-dark-secondary dark:text-white/90" >
       
       <div className='max-w-7xl mx-auto'>
       <h2 className="text-shadow-xs text-offblack dark:text-white/90" >My Skills</h2>
-      <p className="text-center text-md pb-5 product-para" >A few of the things I've Know</p>
+      <p className="text-center text-md pb-5 product-para dark:text-white/70" >A few of the things I've Know</p>
       <h3 className='pt-4 pb-2'>Library & Frameworks:</h3>
       <div className="flex flex-wrap gap-x-2 gap-y-2 " >
       {

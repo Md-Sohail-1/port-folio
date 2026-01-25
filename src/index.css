@@ -56,12 +56,8 @@ em{
     font-family: "Open Sans";
   }
   .product-para{
-<<<<<<< HEAD
-    font-size: min(5vw, 0.95rem);
-=======
     font-size: min(5vw, 1rem);
     font-family: "Open Sans";
->>>>>>> daca6ec (fix font and dark scheme)
   }
 }
 

@@ -1,23 +1,20 @@
 import { ReactTyped } from 'react-typed'
 
 const LandingSection = () => {
-  const typedStrings = ["Frontend Engineer UI", "UI Engineer", "Product Frontend Engineer"]
+  const typedStrings = ["Frontend Developer", "React Developer", "React Frontend Engineer"]
 
   return (
-    <main className="relative pt-16 bg-white  text-offblack dark:text-secondary dark:bg-offblack w-full min-h-[calc(100vh-64px)] md:px-15  md:py-0 px-5 " >
+    <main id="home" className="relative pt-16 bg-white  text-offblack dark:text-secondary dark:bg-offblack w-full min-h-[calc(100vh-64px)] md:px-15  md:py-0 px-5 " >
       <div className='md:h-screen  max-w-7xl mx-auto  flex gap-12 md:gap-20 flex-col md:flex-row md:items-center md:justify-between pb-10 md:pb-0 '>
       <div className="flex flex-col gap-2 self start md:w-1/2" >
-        <h1 className="font-bold traking-widest  md:leading-16" >
-          I'm <ReactTyped className=" text-primary dark:text-blue-400 font-semibold" 
-           strings={typedStrings} 
-           typeSpeed={80} 
-           backSpeed={60} 
-           loop /></h1 >
+        <h1 className="font- traking-widest  md:leading-18" >
+          I'm a <strong className=" text-primary dark:text-blue-400 font-semibold"> Frontend Developer</strong>
+           </h1>
         <p className="landing-para pr-8 md:pr-4  leading-8" >
-          UI Engineer specializing in building clean, accessible and responsive user interfaces using 
-          <strong> React, Tailwind CSS, and JavaScript, </strong>
-          with strong focus on 
-          <strong> UI consistency, UX principles, and design-to-code workflows.</strong>
+          A Frontend Developer specializing in 
+          <strong> Javascript, React.js and Tailwind CSS, </strong>
+          focused on building 
+          <strong> high-performances, accessible, and scalable web applications.</strong>
         </p>
         <a href="../src/assets/sohailResume.pdf" aria-label="dowmload resume" download="sohailResume.pdf" className="mr-auto w-content text-sm text-white/90 bg-primary dark:text-white/80 shadow-sm text-shadow-md hover:bg-dark-primary focus:bg-primary/80 dark:bg-dark-primary hover:dark:bg-primary focus:dark:bg-dark-primary/80 px-4 md:px-8 py-3 md:py-3 rounded-md transition-all ease-in-out duration-200 mt-4" >Download Resume</a>
       </div>
@@ -34,6 +31,11 @@ const LandingSection = () => {
       </div>
     </main>
   )
+          // <ReactTyped className=" text-primary dark:text-blue-400 font-semibold" 
+          // strings={typedStrings} 
+          // typeSpeed={100} 
+          // backSpeed={80} 
+          // loop />
 }
 
 export default LandingSection

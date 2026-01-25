@@ -4,7 +4,11 @@ import { BiLogoGmail } from "react-icons/bi";
 
 const ContactSection = () => {
   return (
+<<<<<<< HEAD
     <div id="contact" className=" px-5 py-20 md:px-15 text-offblack/80 bg-white dark:text-secondary/70 dark:bg-offblack min-h-20 w-full" >
+=======
+    <section id="contact" className="px-5 py-20 md:px-15 text-offblack/80 bg-white dark:text-secondary/70 dark:bg-offblack min-h-20 w-full" >
+>>>>>>> daca6ec (fix font and dark scheme)
       <div className='max-w-7xl mx-auto'>
       <h2 className='text-offblack dark:text-secondary'>Get in Touch</h2>
       <p className='text-center pb-8 product-para'>Have a project in mind, a question, or just want to connect? Drop me a message!</p>
@@ -22,7 +26,7 @@ const ContactSection = () => {
  
       </div>
       </div>
-    </div>
+    </section>
   )
 }
 

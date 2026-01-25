@@ -1,15 +1,9 @@
 import { useRef, useEffect,useState } from 'react'
 
 import Header from './Components/Header'
-import LandingSection from './Components/LandingSection'
-import About from './Components/About'
-import ProjectsSection from './Components/ProjectsSection'
-import SkillSection from './Components/SkillSection'
-import ContactSection from './Components/ContactSection'
-import Footer from './Components/Footer'
 
 
-const App = () => {
+const App = ({children}) => {
   const appRef = useRef(null)
   const [theme, setTheme] = useState(window.localStorage.getItem('theme'))
 
@@ -36,12 +30,7 @@ const App = () => {
   return (
     <div ref={appRef} className={`${theme == 'dark' && 'dark'} font-poppins pt-16`} >
       <Header toggleFunc={toggleTheme}/>
-      <LandingSection />
-      <About />
-      <ProjectsSection />
-      <SkillSection />
-      <ContactSection />
-      <Footer/>
+      {children}
     </div>
   )
 }

@@ -4,8 +4,8 @@ const LandingSection = () => {
   const typedStrings = ["Frontend Developer", "React Developer", "React Frontend Engineer"]
 
   return (
-    <main id="home" className="relative pt-16 bg-white  text-offblack dark:text-secondary dark:bg-offblack w-full min-h-[calc(100vh-64px)] md:px-15  md:py-0 px-5 " >
-      <div className='md:h-screen  max-w-7xl mx-auto  flex gap-12 md:gap-20 flex-col md:flex-row md:items-center md:justify-between pb-10 md:pb-0 '>
+    <main className="relative pt-16 md:pt-0 bg-white  text-offblack dark:text-secondary dark:bg-offblack w-full  min-h-[calc(100vh-64px)] md:px-15 md:grid md:place-content-center md:py-0 px-5 " >
+      <div className='min-h-[calc(100vh - 64px)] max-w-7xl mx-auto  flex gap-12 md:gap-20 flex-col md:flex-row md:items-center md:justify-between pb-10 md:pb-0 '>
       <div className="flex flex-col gap-2 self start md:w-1/2" >
         <h1 className="font- traking-widest  md:leading-18" >
           I'm a <strong className=" text-primary dark:text-blue-400 font-semibold"> Frontend Developer</strong>
@@ -16,7 +16,7 @@ const LandingSection = () => {
           focused on building 
           <strong> high-performances, accessible, and scalable web applications.</strong>
         </p>
-        <a href="../src/assets/sohailResume.pdf" aria-label="dowmload resume" download="sohailResume.pdf" className="mr-auto w-content text-sm text-white/90 bg-primary dark:text-white/80 shadow-sm text-shadow-md hover:bg-dark-primary focus:bg-primary/80 dark:bg-dark-primary hover:dark:bg-primary focus:dark:bg-dark-primary/80 px-4 md:px-8 py-3 md:py-3 rounded-md transition-all ease-in-out duration-200 mt-4" >Download Resume</a>
+        <a href="https://drive.google.com/file/d/1vTsl7-S4OEZD4j9mJrLFwCz1BQ6VdNGM/view?usp=drivesdk" aria-label="view resume" className="mr-auto w-content text-sm text-white/90 bg-primary dark:text-white/80 shadow-sm text-shadow-md hover:bg-dark-primary focus:bg-primary/80 dark:bg-dark-primary hover:dark:bg-primary focus:dark:bg-dark-primary/80 px-4 md:px-8 py-3 md:py-3 rounded-md transition-all ease-in-out duration-200 mt-4" >Download Resume</a>
       </div>
       <div className='landing-image bg-white rounded-full'>
         <img 

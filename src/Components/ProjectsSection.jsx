@@ -1,4 +1,3 @@
-import React from 'react'
 import ProjectCard from './ProjectCard'
 import eComImage from "../assets/eCom.png"
 import RealEstateImg from "../assets/realEstate.png"
@@ -34,7 +33,6 @@ const ProjectsSection = () => {
 
   return (
     <section id='projects' className="h-auto w-full md:px-15 px-5 py-20  bg-white text-offblack/70 dark:bg-offblack dark:text-secondary/70" >
-      
       <div className='max-w-7xl mx-auto'>
       <h2 className=" text-shadow-xs text-offblack dark:text-white" >Projects</h2>
       <p className="text-center text-md pb-8 product-para" >A few of the things I've built</p>
@@ -47,5 +45,4 @@ const ProjectsSection = () => {
     </section>
   )
 }
-
 export default ProjectsSection

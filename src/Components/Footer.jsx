@@ -1,11 +1,10 @@
-import React from 'react'
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className='w-full bg-offblack text-secondary dark:bg-dark-secondary px-5 md:px-15 py-4'>
+    <footer className='w-full bg-offblack text-secondary dark:bg-dark-secondary px-5 md:px-15 py-4'>
         <div className='max-w-7xl mx-auto flex items-center justify-between'>
             <div className='flex items-center gap-2'>
                 <h4>Made with</h4> 
@@ -22,8 +21,7 @@ const Footer = () => {
                 </a>
             </div>
         </div>
-    </div>
+    </footer>
   )
 }
-
 export default Footer

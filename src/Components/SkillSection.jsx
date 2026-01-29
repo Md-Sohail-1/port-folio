@@ -1,4 +1,3 @@
-import React from 'react'
 import SkillCard from './SkillCard'
 
 const SkillSection = () => {
@@ -23,15 +22,14 @@ const SkillSection = () => {
     'Github',
     'VS Code',
     'Figma (basic)',
-    'Dev tools',
+    'Chrome DevTools',
   ]
   
   return (
-    <section id="skills" className="py-20 w-full px-5 md:px-15 bg-secondary text-offblack/80 dark:bg-dark-secondary dark:text-white/90" >
-      
+    <section id="skills" className="py-20 w-full px-5 md:px-15 bg-secondary text-offblack/90 dark:bg-dark-secondary dark:text-white/90" >
       <div className='max-w-7xl mx-auto'>
       <h2 className="text-shadow-xs text-offblack dark:text-white/90" >My Skills</h2>
-      <p className="text-center text-md pb-5 product-para dark:text-white/70" >A few of the things I've Know</p>
+      <p className="text-center text-md pb-5 product-para text-offblack/70 dark:text-white/70" >A few of the things I've Know</p>
       <h3 className='pb-2'>Key skills:</h3>
       <div className="flex flex-wrap gap-x-2 gap-y-2 " >
       {
@@ -60,5 +58,4 @@ const SkillSection = () => {
     </section>
   )
 }
-
 export default SkillSection

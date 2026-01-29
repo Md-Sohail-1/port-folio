@@ -1,12 +1,10 @@
-import { useRef, useEffect,useState } from 'react'
+import { useRef, useEffect, useState } from 'react'
 
 import Header from './Components/Header'
-
 
 const App = ({children}) => {
   const appRef = useRef(null)
   const [theme, setTheme] = useState(window.localStorage.getItem('theme'))
-
   function toggleTheme (theme) {
     if(theme == 'light'){
       appRef.current.classList.add("dark")
@@ -28,7 +26,7 @@ const App = ({children}) => {
   },[])
 
   return (
-    <div ref={appRef} className={`${theme == 'dark' && 'dark'} font-poppins pt-16`} >
+    <div ref={appRef} id="hero" className={`${theme} font-poppins `} >
       <Header toggleFunc={toggleTheme}/>
       {children}
     </div>

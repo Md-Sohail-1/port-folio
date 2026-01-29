@@ -1,4 +1,3 @@
-import React from 'react'
 import { MdAddCall } from "react-icons/md";
 import { BiLogoGmail } from "react-icons/bi";
 
@@ -10,12 +9,12 @@ const ContactSection = () => {
       <p className='text-center pb-8 product-para'>Have a project in mind, a question, or just want to connect? Drop me a message!</p>
       <div className='flex gap-8 flex-wrap items-center justify-center'>
         <a href='mailto:sohil931376@gmail.com' className='relative group flex flex-col transition ease-in-out md:py-6 md:px-12 py-8  px-8 rounded-md border bg-secondary shadow-sm shadow-primary/30 dark:bg-dark-secondary items-center justify-center dark:border-secondary'>
-          <h4>Sent a Message</h4>
+          <h3>Sent a Message</h3>
           <BiLogoGmail className=' text-offblack  dark:text-secondary text-6xl py-2' />
           <p className='absolute hidden group-hover:flex bottom-1 z-100'>sohil931376@gmail.com</p>
         </a>
         <a href={`tel:9891113240`} className='relative group flex flex-col transition ease-in-out md:py-6 md:px-12 py-8  px-8 rounded-md border bg-secondary shadow-sm shadow-primary/30 dark:bg-dark-secondary items-center justify-center dark:border-secondary'>
-          <h4>Make a Call</h4>
+          <h3>Make a Call</h3>
           <MdAddCall className=' text-offblack dark:text-secondary text-6xl py-2'/>
           <p className='absolute hidden group-hover:flex bottom-1 z-100'>9891113240</p>
         </a>
@@ -24,5 +23,4 @@ const ContactSection = () => {
     </section>
   )
 }
-
 export default ContactSection

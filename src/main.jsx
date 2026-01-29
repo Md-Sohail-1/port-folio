@@ -1,25 +1,27 @@
-import { StrictMode } from 'react'
+import { StrictMode, lazy, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 
-import LandingSection from './Components/LandingSection'
-import About from './Components/About'
-import ProjectsSection from './Components/ProjectsSection'
-import SkillSection from './Components/SkillSection'
-import ContactSection from './Components/ContactSection'
-import Footer from './Components/Footer'
-
+const LandingSection = lazy(()=> import('./Components/LandingSection'))
+const About = lazy(()=> import('./Components/About'))
+const ProjectsSection = lazy(()=> import('./Components/ProjectsSection'))
+const SkillSection = lazy(()=> import('./Components/SkillSection'))
+const ContactSection = lazy(()=> import('./Components/ContactSection'))
+const Footer = lazy(()=> import('./Components/Footer'))
+import Loading from './Components/Loading'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App>
+    <Suspense fallback={<Loading />} >
       <LandingSection />
       <About />
       <ProjectsSection />
       <SkillSection />
       <ContactSection />
       <Footer/>
+    </Suspense>
     </App>
   </StrictMode>,
 )

@@ -31,7 +31,7 @@ const Header = ({toggleFunc}) => {
         <li ><a aria-label="about me" href="#about"  className="text-shadow-xs px-2 py-2 rounded-md hover:text-white dark:hover:hover:text-white transition-all duration-100 ease-in leading-4 hover:underline-offset-6 hover:underline decoration-white dark:decoration-white" >About</a></li>
         <li ><a aria-label="view projects " href="#projects" className="text-shadow-xs px-2 py-2 rounded-md hover:text-white dark:hover:hover:text-white transition-all duration-100 ease-in leading-4 hover:underline-offset-6 hover:underline decoration-white dark:decoration-white" >Projects</a></li>
         <li ><a aria-label="view skills" href="#skills" className="text-shadow-xs px-2 py-2 rounded-md hover:text-white dark:hover:hover:text-white transition-all duration-100 ease-in leading-4 hover:underline-offset-6 hover:underline decoration-white dark:decoration-white" >Skills</a></li>
-        <li ><a aria-label="get contact" href="#contact" className="text-shadow-xs px-2 py-2 rounded-md hover:text-white dark:hover:hover:text-white transition-all duration-100 ease-in leading-4 hover:underline-offset-6 hover:underline decoration-white dark:decoration-white" >Contact</a></li>
+        <li ><a aria-label="get contact" href="#contact_us" className="text-shadow-xs px-2 py-2 rounded-md hover:text-white dark:hover:hover:text-white transition-all duration-100 ease-in leading-4 hover:underline-offset-6 hover:underline decoration-white dark:decoration-white" >Contact</a></li>
       </ul>
       <button aria-label="toggle theme" className="theme-toggler hidden md:flex text-2xl text-white hover:text-secondary" onClick={()=>toggleTheme()} >{theme !== 'light' ? <IoIosMoon /> : <LuSunMedium />}</button>
       <div className="md:hidden flex gap-4 items-center text-2xl text-secondary" >
@@ -43,7 +43,7 @@ const Header = ({toggleFunc}) => {
         <li ><a aria-label="about me" href="#about" className="text-shadow-xs px-2 py-2 rounded-md hover:text-primary/70 leading-4 underline-offset-6 hover:underline decoration-primary" >About</a></li>
         <li ><a aria-label="view projects" href="#projects" className="text-shadow-xs px-2 py-2 rounded-md hover:text-primary/70 leading-4 underline-offset-6 hover:underline decoration-primary" >Projects</a></li>
         <li ><a aria-label="view skills " href="#skills" className="text-shadow-xs px-2 py-2 rounded-md hover:text-primary/70 leading-4 underline-offset-6 hover:underline decoration-primary" >Skills</a></li>
-        <li ><a aria-label="get contact" href="#contact" className="text-shadow-xs px-2 py-2 rounded-md hover:text-primary/70 leading-4 underline-offset-6 hover:underline decoration-primary" >Contact</a></li>
+        <li ><a aria-label="get contact" href="#contact_us" className="text-shadow-xs px-2 py-2 rounded-md hover:text-primary/70 leading-4 underline-offset-6 hover:underline decoration-primary" >Contact</a></li>
       </ul>
       </div>
     </nav>

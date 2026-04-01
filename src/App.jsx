@@ -26,7 +26,7 @@ const App = ({children}) => {
   },[])
 
   return (
-    <div ref={appRef} id="hero" className={`${theme} font-poppins `} >
+    <div ref={appRef} id="hero" className={`${theme} font-poppins`} >
       <Header toggleFunc={toggleTheme}/>
       {children}
     </div>

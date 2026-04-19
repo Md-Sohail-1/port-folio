@@ -44,13 +44,13 @@ const ContactSection = () => {
         // Confirmation Message 
       }
         <div id="confirmation" className={`${formSubmited === '' && 'hidden'} ${formSubmited ? 'text-green-600' : 'text-red-600'} font-medium mb-6`}>{formConfirmMsg}</div>
-        <h3 className="text-3xl sm:text-3xl md:text-4xl text-center font-bold text-offblack dark:text-secondary pb-4 md:mb-1">Connect With Us</h3>
+        <h3 className="text-3xl sm:text-3xl md:text-4xl text-center font-bold text-offblack dark:text-secondary pb-4 md:mb-1">Let's Connect</h3>
         <div className="absolute inset-0 z-[-1] blur-[100px] rounded-xl bg-[radial-gradient(circle_at_center,rgba(255,120,110,0.4),rgba(110,120,255,0.4))]"></div>
         <input name='name' onChange={setInputValue} value={inputData.name} type="text" placeholder="Enter Name" required className="w-full p-3 rounded-md dark:bg-white/10 bg-secondary/20 text-offblack/90 dark:text-white/90 text-base shadow border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 transition" autoComplete="true"/>
         <input name='email' onChange={setInputValue} value={inputData.email} type="email" placeholder="Enter Email ID" required className="w-full p-3 rounded-md dark:bg-white/10 bg-secondary/20 text-offblack/90 dark:text-white/90 text-base shadow border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 transition" autoComplete="true"/>
         <textarea name='message' onChange={setInputValue} value={inputData.message} placeholder="Message Here..." required className="w-full h-32 p-3 rounded-md dark:bg-white/10 bg-secondary/20 text-offblack/90 dark:text-white/90 text-base shadow border border-transparent resize-none focus:outline-none focus:ring-2 focus:ring-indigo-400 transition dark:placeholder:text-white/50 placeholder:text-offblack/50"></textarea>
         <button type="submit" className="mr-auto my-2" >
-          <a className="inline-block px-6 py-3 bg-primary text-sm text-white rounded-md transition duration-300 hover:bg-blue-800 ml-0 mr-auto">
+          <a className="inline-block px-6 py-3 bg-primary dark:bg-dark-primary/90 text-sm text-white rounded-md transition duration-300 hover:bg-blue-800 ml-0 mr-auto">
             Get Connected
           </a>
         </button>

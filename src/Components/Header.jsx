@@ -33,9 +33,9 @@ const Header = ({toggleFunc}) => {
         <li ><a aria-label="view skills" href="#skills" className="text-shadow-xs px-2 py-2 rounded-md hover:text-white dark:hover:hover:text-white transition-all duration-100 ease-in leading-4 hover:underline-offset-6 hover:underline decoration-white dark:decoration-white" >Skills</a></li>
         <li ><a aria-label="get contact" href="#contact_us" className="text-shadow-xs px-2 py-2 rounded-md hover:text-white dark:hover:hover:text-white transition-all duration-100 ease-in leading-4 hover:underline-offset-6 hover:underline decoration-white dark:decoration-white" >Contact</a></li>
       </ul>
-      <button aria-label="toggle theme" className="theme-toggler hidden md:flex text-2xl text-white hover:text-secondary" onClick={()=>toggleTheme()} >{theme !== 'light' ? <IoIosMoon /> : <LuSunMedium />}</button>
+      <button aria-label="toggle theme" className="theme-toggler hidden md:flex text-2xl text-white hover:text-secondary" onClick={()=>toggleTheme()} >{theme === 'light' ? <IoIosMoon /> : <LuSunMedium />}</button>
       <div className="md:hidden flex gap-4 items-center text-2xl text-secondary" >
-        <button aria-label="toggle theme" className='theme-toggler' onClick={()=>toggleTheme()} >{theme !== 'light' ? <IoIosMoon /> : <LuSunMedium />}</button>
+        <button aria-label="toggle theme" className='theme-toggler' onClick={()=>toggleTheme()} >{theme === 'light' ? <IoIosMoon /> : <LuSunMedium />}</button>
         <button aria-label="toggle navbar" className="md:hidden" onClick={()=> setShowNavigation(!showNavigation)}>{showNavigation ? <RxCross2 /> : <HiMenu />}</button>
       </div>
       <ul className={`${showNavigation ? 'translate-x-0' : ''} transition -translate-x-full absolute z-10 gap-4 md:hidden h-[calc(100vh - 64px)] w-full top-16 left-0 bg-white dark:bg-offblack text-black/80 dark:text-white/80 pt-4 px-4 flex flex-col py-8 border-b border-slate-300/50`}>

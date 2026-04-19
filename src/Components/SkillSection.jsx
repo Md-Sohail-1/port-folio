@@ -3,13 +3,15 @@ import SkillCard from './SkillCard'
 const SkillSection = () => {
   const Fskills = [
     'React.js',
-    'Tailwind CSS',
     'JavaScript (ES6+)',
+    'TypeScript',
     'HTML & CSS',
     'Redux',
-    'Accessibility',
-    'Node js(basics)',
-    'Express js(basics)',
+    'Bootstrap',
+    'Node.js',
+    'Express.js',
+    'MongoDB',
+    'SQL',
   ]
   const Uiskills = [
     'Tailwind CSS',
@@ -21,8 +23,9 @@ const SkillSection = () => {
     'Git',
     'Github',
     'VS Code',
+    'NPM',
+    'Babel',
     'Figma (basic)',
-    'Chrome DevTools',
   ]
   
   return (

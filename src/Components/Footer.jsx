@@ -16,7 +16,7 @@ const Footer = () => {
                 <a aria-label="goto github profile" href='https://github.com/Md-Sohail-1' target="_blank" className='group text-secondary/70'>
                     <FaGithub className='group-hover:text-white'/>
                 </a>
-                <a aria-label="goto linkedin profile" href="https://linkedin.com" target="_blank" className='group text-secondary/70'>
+                <a aria-label="goto linkedin profile" href="https://www.linkedin.com/in/md-sohail-delhi" target="_blank" className='group text-secondary/70'>
                     <FaLinkedin className='group-hover:text-white'/>
                 </a>
             </div>

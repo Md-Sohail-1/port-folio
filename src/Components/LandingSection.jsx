@@ -11,12 +11,12 @@ const LandingSection = () => {
           I'm a <strong className=" text-primary dark:text-blue-400 font-semibold"> Frontend Developer</strong>
            </h1>
         <p className="landing-para pr-8 md:pr-4  leading-8" >
-          A Frontend Developer specializing in 
-          <strong> Javascript, React.js and Tailwind CSS, </strong>
+          A Frontend Web Developer specializing in 
+          <strong> JavaScript/TypeScript, React.js and Tailwind CSS, </strong>
           focused on building 
           <strong> high-performances, accessible, and scalable web applications.</strong>
         </p>
-        <a href="https://drive.google.com/file/d/1pkX5r3hKtmbLK5-ECuy70xoO3040evcH/view?usp=drivesdk" aria-label="view resume" className="mr-auto w-content text-sm text-white/90 bg-primary dark:text-white/80 shadow-sm text-shadow-md hover:bg-dark-primary focus:bg-primary/80 dark:bg-dark-primary hover:dark:bg-primary focus:dark:bg-dark-primary/80 px-4 md:px-8 py-3 md:py-3 rounded-md transition-all ease-in-out duration-200 mt-4" >Download Resume</a>
+        <a href="https://drive.google.com/file/d/1gY4TH_4K_mr2Lt54KZs-WhJq2qY9Sjmv/view?usp=drivesdk" aria-label="view resume" className="mr-auto w-content text-sm text-white/90 bg-primary dark:text-white/80 shadow-sm text-shadow-md hover:bg-dark-primary focus:bg-primary/80 dark:bg-dark-primary hover:dark:bg-primary focus:dark:bg-dark-primary/80 px-4 md:px-8 py-3 md:py-3 rounded-md transition-all ease-in-out duration-200 mt-4" >Download Resume</a>
       </div>
       <div className='landing-image bg-white rounded-full'>
         <img 
